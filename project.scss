@@ -1,0 +1,121 @@
+@import "reset";
+@import "global";
+@import "veriable";
+
+@mixin fontFamily(){
+    font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .home {
+      opacity: 0;
+    }
+    .product{
+        opacity: 0;
+      }
+    .services{
+        opacity: 0;
+    }
+    .signup{
+        opacity: 0;
+    }
+    .button{
+        position: relative;
+        top: 155px;
+    }
+    .icon {
+        position: absolute;
+        top: 4px;
+        right: 10px;
+        font-size: 1rem; 
+        color:blue;
+        background-color: rgb(179, 171, 171);
+        border-radius: 10px;
+      }
+
+  }
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .navTitle{
+        margin: $navamarg;
+        @include fontFamily();
+        a{
+            padding: $navapad+5px;
+            text-decoration: none;
+            color: $navClor;
+            @include fontFamily();
+            &:hover{
+                color: green
+            }
+        }
+        .button{
+            @include singup();
+            &:hover{
+                background-color: red;
+                color: white;
+            }
+            
+        }
+        .icon{
+            color: white;
+    
+            }}
+    h1 {
+        margin: $navamarg;
+        @include fontFamily();
+        font-weight: 100;
+        position: relative; left: 70px;
+    
+    }}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .container{
+         margin: $navamarg;
+         position: relative;
+         top: 10rem;
+         left: 70px;
+        h1{
+            color: green;
+            font-size:65px;
+            @include fontFamily();
+        }
+        h2{
+            font-size: 50px;
+            @include fontFamily();
+        }
+        p{
+            font-size: 30px;
+           @include fontFamily();
+        }
+    }
+    .picture {
+        img{
+        width: $width;
+        height: $height;
+        float: right;
+        margin-right: $navamarg + 15px;
+        }
+    }
+}
+footer{
+    .button{
+        
+        @include singup();  
+        position: relative;
+        bottom: 150px;
+        left: 70px;
+         &:hover{
+
+        background-color: red;
+       
+    } 
+    }
+ 
+}

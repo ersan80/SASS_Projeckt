@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    opacity: 0;
+  }
+  .product {
+    opacity: 0;
+  }
+  .services {
+    opacity: 0;
+  }
+  .signup {
+    opacity: 0;
+  }
+  .button {
+    position: relative;
+    top: 155px;
+  }
+  .icon {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: 1rem;
+    color: blue;
+    background-color: #b3abab;
+    border-radius: 10px;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .navTitle {
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header .navTitle a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+header .navTitle a:hover {
+  color: green;
+}
+
+header .navTitle .button {
+  background-color: #52a352;
+  color: aliceblue;
+  padding: 10px 25px;
+  margin-left: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+header .navTitle .button:hover {
+  background-color: red;
+  color: white;
+}
+
+header .navTitle .icon {
+  color: white;
+}
+
+header h1 {
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  position: relative;
+  left: 70px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+section .container {
+  margin: 20px;
+  position: relative;
+  top: 10rem;
+  left: 70px;
+}
+
+section .container h1 {
+  color: green;
+  font-size: 65px;
+  font-family: 'Roboto', sans-serif;
+}
+
+section .container h2 {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+section .container p {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+section .picture img {
+  width: 75%;
+  height: 100%;
+  float: right;
+  margin-right: 35px;
+}
+
+footer .button {
+  background-color: #52a352;
+  color: aliceblue;
+  padding: 10px 25px;
+  margin-left: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  bottom: 150px;
+  left: 70px;
+}
+
+footer .button:hover {
+  background-color: red;
+}
+/*# sourceMappingURL=project.css.map */
